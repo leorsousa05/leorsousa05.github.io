@@ -165,7 +165,6 @@ main
 .destaque
 {
     background-image: url(../imagens/fundo-destaque.jpg);
-    color: white;
     height: 90vh;
 
     background-size: cover;
