@@ -1,0 +1,440 @@
+/* Resets */
+*, *::before, *::after
+{
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 14px;
+}
+
+body, h1, h2, h3, p, figure
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+h1
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+h1 a
+{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 0.3rem 1rem;
+}
+
+h2 a
+{
+    color: black;
+}
+
+/* Header */
+
+header
+{
+    background-color: white;
+    text-transform: uppercase;
+
+    /* Deixar cabeçalho fixo */
+    position: sticky;
+    top: 0;
+}
+
+/* Regra para um elemento (no caso, uma div) com a classe
+limitador e dentro do header
+Importante: o flex configurado aqui funcionará SOMENTE para a classe limitador aplicada na div dentro do header. Além disso, ela também estar a recebendo max-width e margin vindo da regra da classe. */
+.header-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Regra para QUALQUER elemento com a classe limitador
+ */
+.limitador
+{
+    max-width: 1100px;
+    margin: auto;
+    width: 95%;
+}
+
+header .limitador
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+/* Header -> Nav */
+.links-menu
+{
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.links-menu a
+{
+    color: black;
+    font-weight: bold;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav h2 a
+{
+    color: black;
+    font-size: 1.2rem;
+    padding: 1rem;
+    display: inline-block;
+}
+
+nav h2 a:hover,
+nav h2 a:focus,
+.links-menu a:hover,
+.links-menu a:focus
+{
+    background-color: gainsboro;
+}
+
+
+/* Esta regra somente irá funcionar quando as
+duas classes estiverem junstas (links-menu)
+
+Obs.: esta regra será aplicada posteriormente
+com o auxílio de programação Javascript */
+
+
+.links-menu.aberto
+{
+    /* Neste ponto, usamos o flex pra voltar
+    a exibir o menu (quando aberto) */
+    display: flex;
+
+    /* E fazemos com que os links apareçam 
+    verticalmente*/
+    flex-direction: column;
+
+    /* Usamos position e coordenadas para garantir
+    o posicionamento correto do menu quando aberto */
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+/* Main */
+
+main
+{
+    flex: 1;
+}
+
+.destaque
+{
+    background-image: url(/imagens/fundo-destaque.jpg);
+    color: white;
+    height: 90vh;
+
+    background-size: cover;
+    /* background-attachment: fixed */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.destaque h2, .destaque p
+{
+    color: white;
+    font-weight: bold;
+    padding: 0.2rem;
+
+    /* Sem essa definição de tamanho
+    o flex-wrap não funciona */
+    width: 100%;
+} 
+
+.destaque h2
+{
+    /* Fonte Responsiva usando
+    função clamp(mínimo, ideal, máximo) */
+    font-size: clamp(2rem, 10vw, 7rem);
+
+    /* Etapa 2: chamar e configurar a animação */
+    /* animation-name: surgir;
+    animation-duration: 5s; */
+    animation-name: surgir;
+    animation-duration: 1s;
+    /* animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; */
+}
+
+.destaque p
+{
+    font-size: clamp(1.5rem, 3vw, 4rem);
+    font-weight: bold;
+
+    /* Sintaxe completa */
+    /* animation-name: surgir;
+    animation-duration: 3s;
+    animation-delay: 500ms;
+    animation-fill-mode: backwards; */
+
+    /* Sintaxe ABREVIADA */
+    animation: surgir 3s 500ms backwards;
+}
+
+/* Etapa 1: Regra de Animação */
+@keyframes surgir {
+    
+    /* dê */ 
+    from 
+    { 
+        opacity: 0;
+        transform: translateY(-100vh);
+    } 
+
+    /* para */
+    to 
+    { 
+        opacity: 1;
+        transform: translateY(0px);
+    } 
+}
+
+.front-end, .historia, .localizacao
+{
+    text-align: center;
+}
+
+section h2
+{
+    padding: 1rem;
+}
+
+section p
+{
+    padding: 0.5rem 0;
+}
+
+.historia
+{
+    background-image: url(/imagens/fundo-madeira.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.historia h2
+{
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+.historia iframe
+{
+    width: 100%;
+    max-width: 700px;
+}
+
+footer
+{
+    background-color: black;
+    color: white;
+    height: 15vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Regras para o conteídp das páginas:
+Produtos, Serviços e Contato */
+.conteudo
+{
+    background-color: whitesmoke;
+    padding: 0.7rem;
+    border-radius: 7px;
+}
+
+.conteudo figure
+{
+    padding: 20px;
+    display: flex;
+    flex-direction: inherit;
+    justify-content: center;
+}
+
+.conteudo figure img
+{
+    width: 12rem;
+    height: 12rem;
+}
+
+/* Tabela */
+table, th, td
+{
+    border: solid 2px black;
+
+    
+    border-collapse: collapse;
+}
+
+table
+{
+    width: 80%;
+    margin: auto;
+    max-width: 600px;
+}
+
+table caption
+{
+    padding-bottom: 10px;
+    padding-top: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+th
+{
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    padding: .5rem;
+}
+
+td
+{
+    background-color: white;
+    font-size: 1.2rem;
+}
+
+/* Formatando os últimos td's */
+td:last-child
+{
+    font-weight: bold;
+    text-align: right;
+    padding-right: 5px;
+}
+
+/* Formatando os primeiros td's */
+td:first-child
+{
+    text-transform: uppercase;
+    padding-left: 5px;
+}
+
+/* Formatando os "Segundos" td's */
+td:nth-child(2)
+{
+    text-align: center;
+}
+
+
+@media screen and (min-width: 530px)
+{
+
+    nav 
+    {
+        width: 70%;
+    }
+
+    nav h2{
+        display: none;
+    }
+
+    .links-menu { display: flex; }
+    
+
+    .links-menu li
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 800px) 
+{
+    html { font-size: 18px; }
+
+    header .limitador { height: 15vh; }
+
+    .destaque { height: 85vh; }
+
+}
+
+form
+{
+    width: 95%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+input:not([type=radio]):not([type=checkbox]), select, textarea
+{
+    border: none;
+    padding: 1%;
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+}
+
+textarea
+{
+    height: auto;
+}
+
+button
+{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+label
+{
+    font-weight: bold;
+}
+
+form div
+{
+    margin-top: 1rem;
+}
