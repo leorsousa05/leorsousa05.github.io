@@ -164,7 +164,7 @@ main
 
 .destaque
 {
-    background-image: url(/simplicity/imagens/fundo-destaque.jpg);
+    background-image: url(../imagens/fundo-destaque.jpg);
     color: white;
     height: 90vh;
 
@@ -255,7 +255,7 @@ section p
 
 .historia
 {
-    background-image: url(/simplicity/imagens/fundo-madeira.jpg);
+    background-image: url(../imagens/fundo-madeira.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
