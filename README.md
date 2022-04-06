@@ -5,7 +5,9 @@ Portfólio de projetos Front-End
 Curso Programador Web.
 
 ### Front-End
-HTML, CSS e JavaScript
+- HTML
+- CSS
+- JS
 
 ### Back-End
 PHP e MySQL
