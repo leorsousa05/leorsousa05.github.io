@@ -24,7 +24,7 @@ body, h1, h2, h3, h4, p, a
 h1, h2, h3, h4, p, a
 {
     color: white;
-    font-family: "Gotham Black";
+    font-family: "Gotham Black", sans-serif;
 }
 
 html
@@ -106,7 +106,7 @@ header
 
 #cta h3
 {
-    font-family: Gotham;
+    font-family: Gotham, sans-serif;
     font-weight: lighter;
 
 }
@@ -286,7 +286,7 @@ footer h2
 footer h4
 {
     padding: 0 0 0 80px;
-    font-family: gotham;
+    font-family: gotham, sans-serif;
     font-weight: 100;
     opacity: 60%;
 }
