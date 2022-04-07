@@ -1,0 +1,512 @@
+@font-face {
+    font-family: "Gotham Black";
+    src: url(/fonts/GOTHAM-BLACK.OTF);
+};
+
+/* Resets */
+*, *::after, *::before
+{
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body, h1, h2, h3, h4, p, a
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, p, a
+{
+    color: white;
+    font-family: "Gotham Black";
+}
+
+html
+{
+    font-size: 20px;
+}
+
+body
+{
+    background-color: #121212;
+}
+
+/* Font Reset */
+
+h1 {font-size: 2.4rem;}
+h2 {font-size: 1.8rem;}
+h3 {font-size: 1.6rem;}
+h4 {font-size: 1rem;}
+p {font-size: 1.2rem;}
+a {font-size: 1.8rem;}
+
+#sep
+{
+    border: 0.1px solid white;
+}
+
+/* Header */
+
+header
+{
+    background-color: #121212;
+}
+
+#header-container
+{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1.9rem 4rem;
+    max-width: 1800px;
+}
+
+#menu
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#menu li
+{
+    padding: 0 4rem;
+    list-style-type: none;
+}
+
+#menu a
+{
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/* CTA */
+
+#cta
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: linear-gradient(145.77deg, #121212 56.28%, #410293 87.4%);
+    height: 1024px;
+}
+
+#cta article
+{
+    padding: 0 6.5rem;
+}
+
+#cta h3
+{
+    font-family: Gotham;
+    font-weight: lighter;
+
+}
+
+/* About Me */
+
+#ab-me
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #121212;
+    padding: 250px 0;
+}
+
+#ab-me article
+{
+    text-align: center;
+    padding: 0 5rem;
+}
+
+/* #cont-ab-me
+{
+    padding: 296px 0;
+} */
+
+.sobre
+{
+    color: #a055ff;
+}
+
+.text h2
+{
+    padding: 1.5rem;
+}
+
+.text
+{
+    padding: 2.5rem 0;
+}
+
+#pc img
+{
+    padding-left: 4rem;
+    max-width: 659px;
+    max-height: 594px;
+    width: 100%;
+    height: 100%;
+}
+
+/* habilidades */
+
+#hab
+{
+    background-color: #121212;
+}
+
+
+#hab img
+{
+    width: 4rem;
+    height: 4rem;
+}
+
+#hab h1
+{
+    text-align: center;
+    padding: 4rem 0 5.850rem;
+}
+
+#hab-container
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 100px 0;
+}
+
+.h2-con
+{
+    padding: 3rem 0;
+}
+
+.softwares
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 1.5rem 0;
+}
+
+.langs
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 1.5rem 0;
+}
+
+#soft-skills
+{
+    padding: 0 0 0 80px;
+}
+
+.softwares h2, .langs h2
+{
+    padding-left: 1.5rem;
+}
+
+#sep-hor
+{
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    height: 790px;
+    border: 2px solid white;
+}
+
+#lang-skills
+{
+    padding: 0 80px 0 0;
+}
+
+/* Contatos */
+
+#contatos
+{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(96.87deg, #410293 0%, #410293 0.01%, #121212 100%);
+    height: 500px;
+}
+
+.infos
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+.icon
+{
+    padding-left: 10px;
+}
+
+#contatos img
+{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+/* Footer */
+
+footer
+{
+    
+    background-color: #121212;
+    height: auto;
+}
+
+footer h2
+{
+    padding: 60px 0 0 80px;
+}
+
+footer h4
+{
+    padding: 0 0 0 80px;
+    font-family: gotham;
+    font-weight: 100;
+    opacity: 60%;
+}
+
+footer ul
+{
+    padding: 0;
+}
+
+footer li
+{
+    text-align: center;
+    padding: 30px 0;
+    list-style-type: none;
+}
+
+.space
+{
+    padding-bottom: 10px;
+}
+
+footer a
+{
+    text-decoration: none;
+    padding: 0 0 0 80px;
+    font-size: 1.5rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:1100px)
+{
+    html
+    {
+        font-size: 18px;
+    }
+
+    #cta
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cta article
+    {
+        padding: 94px 0;
+    }
+
+    #ab-me
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+
+    }
+
+    #ab-me img
+    {
+        max-width: 365px;
+        max-height: 329px;
+        padding: 0 40px;
+
+        height: auto;
+    }
+
+    #sep-hor
+    {
+        display: none;
+    }
+
+    #hab-container
+    {
+        display: flex;
+        flex-direction: column;
+
+        padding: 0 0 40px 0;
+    }
+
+    #hab-h1
+    {
+        padding: 1rem 0;
+    }
+
+    #lang-skills
+    {
+        padding: 0;
+    }
+
+    #soft-skills
+    {
+        padding: 0;
+    }
+
+    #cta
+    {
+        padding: 50px;
+        height: auto;
+    }
+
+    #contatos
+    {
+        height: auto;
+        padding: 30px;
+    }
+
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer h2, footer h4, footer a
+    {
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 860px)
+{
+    html
+    {
+        font-size: 16px;
+    }
+
+    #header-container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #menu li
+    {
+        padding: 20px;
+    }
+
+    #menu
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin: 40px 0 0 0;
+    }
+
+    #contatos
+    {
+        font-size: 15px;
+    }
+
+    .space{
+        padding:10px;
+    }
+
+    footer a
+    {
+        font-size: 1.9rem;
+    }
+
+    footer li
+    {
+        padding: 20px;
+    }
+
+    footer h2
+    {
+        padding: 20px 0 0 0;
+    }
+}
+
+@media screen and (max-width:570px)
+{
+    html
+    {
+        font-size: 14px;
+    }
+
+    #pc img
+    {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:480px)
+{
+    html
+    {
+        font-size: 11px;
+    }
+
+    .infos
+    {
+        padding: 0;
+    }
+
+    footer a
+    {
+        font-size: 1.9rem;
+    }
+
+    footer li
+    {
+        padding: 20px;
+    }
+
+    footer h2
+    {
+        padding: 20px 0 0 0;
+    }
+
+    .space{
+        padding:10px;
+    }
+}
