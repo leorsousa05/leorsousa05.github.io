@@ -11,9 +11,10 @@ body, h1, h2, h3, p, figure {
     padding: 0;
     margin: 0;
 }
- html {
+html {
      font-size: 15px;
- }
+     font-family: 'Bahnscrift';
+}
 /* Header */
 
 header
