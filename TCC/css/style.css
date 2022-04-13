@@ -1,8 +1,8 @@
 /* Reset */
 @font-face {
-    font-family: bahnscrift;
-    src: url(../fontes/bahnscrift/BAHNSCHRIFT.TTF);
+    font-family: "Bahnschrift"; src: url("//db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.eot");
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
 
 *, *::after, *::before { box-sizing: border-box; }
