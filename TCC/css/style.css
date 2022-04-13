@@ -1,7 +1,7 @@
 /* Reset */
 @font-face {
     font-family: bahnscrift;
-    src: url(/fontes/bahnscrift/BAHNSCHRIFT.TTF);
+    src: url(../fontes/bahnscrift/BAHNSCHRIFT.TTF);
 }
 @import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
 
