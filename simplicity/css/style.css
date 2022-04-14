@@ -65,6 +65,8 @@ header
     /* Deixar cabeçalho fixo */
     position: sticky;
     top: 0;
+
+    z-index: 1000;
 }
 
 /* Regra para um elemento (no caso, uma div) com a classe
@@ -112,6 +114,8 @@ header .limitador
     height: 50px;
     justify-content: center;
     align-items: center;
+
+    background-color: white;
 }
 
 nav h2 a
