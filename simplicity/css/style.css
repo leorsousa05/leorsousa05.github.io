@@ -369,6 +369,10 @@ td:nth-child(2)
     text-align: center;
 }
 
+.none {
+    box-shadow: 0px 0px 5px red;
+}
+
 
 @media screen and (min-width: 530px)
 {

@@ -50,3 +50,24 @@ https://github.com/vanilla-masker/vanilla-masker*/
 VMasker(inputCep).maskPattern("99999-999");
 VMasker(inputTelefone).maskPattern("(99) 99999-9999");
 
+
+/* Programação do contador de caracteres
+do campo mensagem */
+const spanMaximo = formulario.querySelector("#maximo");
+const bCaracteres = formulario.querySelector("#caracteres");
+const textMensagem = formulario.querySelector("#mensagem");
+
+let quantidade = 100;
+
+// Evento para detectar a digitação (Entrada) no campo
+textMensagem.addEventListener('input', function() {
+    let total = quantidade - textMensagem.value.length;
+    bCaracteres.textContent = total
+    if (total == 0) {
+        textMensagem.style.boxShadow = '0 0px 6px red';
+        bCaracteres.style.color = 'red'
+    } else {
+        textMensagem.style.boxShadow = 'none';
+        bCaracteres.style.color = 'black'
+    };
+});
