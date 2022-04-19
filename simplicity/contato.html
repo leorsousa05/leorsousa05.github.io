@@ -40,7 +40,7 @@
             <p>Incidunt illum, voluptatem reprehenderit quibusdam minus temporibus rem fugiat odit earum ipsum ratione excepturi quasi fugit suscipit libero, recusandae repellat culpa. Aspernatur natus omnis ad aperiam magnam suscipit, praesentium quasi.</p>
 
             <form action="" method="post">
-                
+
                 <div>
                     <label for="nome">Nome:</label>
                     <input type="text" name="nome" id="nome" required>
@@ -58,7 +58,7 @@
 
                 <div>
                     <label for="tele">Telefone:</label>
-                    <input type="tel" name="tele" id="tele">
+                    <input type="tel" name="tele" id="telefone">
                 </div>
 
                 <div>
@@ -95,6 +95,31 @@
 
                 </div>
 
+                <!-- INÍCIO HTML PARA CEP/ENDEREÇO -->
+                <div>
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" maxlength="9" required>
+                    <button id="localizar-cep">Localizar</button>
+                    <b id="status"></b>
+                </div>
+                <div>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" size="30">
+                </div>
+                <div>
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro">
+                </div>
+                <div>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade">
+                </div>
+                <div>
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado">
+                </div>
+                <!-- /FIM HTML PARA CEP/ENDEREÇO -->
+
                 <div>
                     <label for="assunto">Assunto</label>
                     <select name="" id="">
@@ -127,7 +152,8 @@
 
     </footer>
     
+    <script src="js/vanilla-masker.min.js"></script>
+    <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
-
 </body>
 </html>
