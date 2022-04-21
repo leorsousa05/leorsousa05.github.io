@@ -1,41 +1,70 @@
 /* Reset */
-@font-face {
-    font-family: "Bahnschrift"; src: url("//db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.eot");
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
-
 *, *::after, *::before { box-sizing: border-box; }
+
+
 
 body, h1, h2, h3, p, figure {
     padding: 0;
     margin: 0;
 }
 html {
-     font-size: 15px;
-     font-family: 'Bahnscrift';
+    font-size: 15px;
+    font-family: 'Bahnschrift';
 }
+
+/* Reset de fonts */
+h1 {font-size: 2rem;}
+h2 {font-size: 1.3rem;}
+p {font-size: 1rem;}
+a {text-decoration: none; color: #3244ff;}
+
+.light {
+    font-weight: 100;
+}
+
+.letter-space {
+    letter-spacing: 3px;
+}
+
 /* Header */
 
-header
-{
-    width: 100%;
-    height: 60px;
-}
-
-.alinhamento {
+header {
     display: flex;
-    justify-items: center;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 10px;
+    background-color: white;
+    padding: 10px 20px;
 }
 
-.alinhamento h1
+header h1
 {
     font-family: 'Nova Round', cursive;
+    text-align: center;
     color: #0016ff;
     font-weight: 400;
     font-size: 24px;
+}
+
+/* Menu Burger */
+#menu {
+    width: 2rem;
+    height: 2rem;
+}
+
+.lines {
+    width: 100%;
+    height: 0.2rem;
+    border-radius: 10px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.short {
+    width: 50%;
+}
+
+.shorter {
+    width: 25%;
 }
 
 /* CTA */
@@ -52,8 +81,9 @@ header
 
 #cta h1{
     color: white;
-    font-family: bahnscrift;
+    font-family: 'Bahnschrift';
     font-weight: normal;
+    font-style: normal;
     text-transform: uppercase;
     padding-top: 10px ;
     display: flex;
@@ -62,7 +92,7 @@ header
 
 .pp {
     color: white;
-    font-family: bahnscrift;
+    font-family: 'Bahnschrift';
     word-spacing: 10%;
     font-weight: lighter;
     opacity: 80%;
@@ -75,73 +105,35 @@ header
 }
 
 /* Cursos */
+#cursos-container {
+    margin: 20px;
+    box-shadow: 0px 6px 35px rgba(0,0,0,.2);
+    border-radius: 10px;
+}
 
-#courses img
+#curso-conteudo {
+    padding: 20px;
+    text-align: center;
+}
+
+.espacado {
+    padding: 0.667rem 0;
+}
+
+.space {
+    padding: 2rem 0 1rem 0;
+}
+
+#cursos-container img
 {
     width: 100%;
 }
 
 .titulo{
-    font-family: bahnscrift;
+    font-family: 'Bahnschrift';
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
     padding: 30px 0px;
 }
 
-#courses {
-    background-color: white;
-    box-shadow: 0px 6px 35px rgba(0,0,0,0.1);
-    margin: 0px 20px;
-    display: flex;
-    justify-content: center;
-}
-
-#courses .pp
-{
-    display: flex;
-    align-items: center;
-    color: black;
-    text-align: center;
-    letter-spacing: 0.1em;
-    font-size: 1rem;
-    font-weight: 350;
-    padding: 0 0 0 0;
-}
-
-#courses .titulo {
-    color: #3244ff;
-}
-
-.developer
-{
-    font-family: bahnscrift;
-    font-size: 2rem;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 30px 0px;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-}
-
-.link {
-    text-decoration: none;
-    color: #3244ff;
-    font-family: bahnscrift;
-    font-size: 2rem;
-    text-align: center;
-    font-weight: 700;
-    padding: 1rem 0;
-}
-
-#container {
-    padding: 20px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#container .titulo
-{
-    font-size: 1.333;
-}

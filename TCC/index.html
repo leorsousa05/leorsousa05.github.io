@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OneUp</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fontes/Bahnscrift/Bahnschrift.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
-    <header>
-        <div class="alinhamento">
-            <img src="imagens-oneup/Menu.svg" alt="menu">
-            <h1>OneUp</h1>
-            <img src="imagens-oneup/user.svg" alt="perfil">
+    <header class="">
+        <div id="menu">
+            <div class="lines"></div>
+            <div class="lines short"></div>
+            <div class="lines shorter"></div>
         </div>
+        <h1>OneUp</h1>
+        <img src="imagens-oneup/user.svg" alt="perfil">
     </header>
 
     <main>
@@ -25,30 +28,39 @@
             </section>
         </article>
 
-        <article>
-            <h1 class="titulo">Cursos em destaque</h1>
-            <section id="courses">
-                <div id="container">
-                    <img src="imagens-oneup/imagem2.png" alt="">
-                    <h1 class="developer">Desenvolvedor Front-End</h1>
-                    <p class="pp">Aprenda tudo sobre desenvolvimento de interfaces inteligentes e atrativas.</p>
-                    <a class="link" href="">Inscreva-se agora</a>
+        <article id="cta-cursos">
+            <section id="cursos">
+
+                <h1 class="titulo">Cursos em<br>destaque</h1>
+
+                <div id="cursos-container">
+
+                    <div id="curso-conteudo">
+                        <img src="imagens-oneup/imagem2.png" alt="">
+                        <h1 class="espacado letter-space">Desenvolvedor Front-End</h1>
+                        <p class="espacado light">Aprenda tudo sobre <br> desenvolvimento de interfaces inteligentes e atrativas. </p>
+                        <h1 class="space"><a href="">Inscreva-se agora</a></h1>
+                    </div>
+
                 </div>
+
+                <h2><a>Explore os cursos</a></h2>
+
             </section>
 
-            <button><h2>Explore os cursos</h2></button>
-
-            <section>
-                <h2>Aprenda conosco</h2>
-                <p>Aprenda com as ótimas didáticos dos nossos professores nos cursos técnicos. Iremos te ensinar de maneira simples e intuitiva, no teórico e na prática.</p>
-
-                <h2>Porque escolher a OneUp?</h2>
-                <p>Temos muitos cursos técnicos com ótimos professores, para você escolher o curso dos seus sonhos e ingressar profissionalmente no mercado de trabalho com nosso famoso certificado reconhecido pelo MEC</p>
-
-                <h2>Como me inscrever para um curso?</h2>
-                <p>É simples, só se cadastrar, entrar no curso que você tanto deseja fazer, clicar em “Se Matricular”, preenchar os formulários e pronto, só aguardar sua vaga.</p>
-            </section>
         </article>
+
+        <article id="perguntas">
+            <h2>Aprenda conosco</h2>
+            <p>Aprenda com as ótimas didáticos dos nossos professores nos cursos técnicos. Iremos te ensinar de maneira simples e intuitiva, no teórico e na prática.</p>
+
+            <h2>Porque escolher a OneUp?</h2>
+            <p>Temos muitos cursos técnicos com ótimos professores, para você escolher o curso dos seus sonhos e ingressar profissionalmente no mercado de trabalho com nosso famoso certificado reconhecido pelo MEC</p>
+
+            <h2>Como me inscrever para um curso?</h2>
+            <p>É simples, só se cadastrar, entrar no curso que você tanto deseja fazer, clicar em “Se Matricular”, preenchar os formulários e pronto, só aguardar sua vaga.</p>
+        </article>
+
     </main>
         <hr>
     <footer>
