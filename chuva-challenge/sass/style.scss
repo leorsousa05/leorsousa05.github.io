@@ -1,12 +1,13 @@
 // Import
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Economica:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 // Reset
 html {
     box-sizing: border-box;
 }
 
-body, h1, h2, h3, p {
+body, h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
 }
@@ -20,7 +21,7 @@ h5 {font-size: 1.125rem;}
 h6 {font-size: 1rem;}
 p {font-size: 0.875rem;}
 .menor {font-size: 0.750rem;}
-.title {font-size: 1.875rem; font-family: roboto; font-weight: 700; color: white;}
+.title {font-size: 1.875rem; font-family: 'Roboto', sans-serif; font-weight: 700; color: white;}
 
 // Imagem Responsiva
 img {
@@ -30,12 +31,7 @@ img {
 // Site
 body {
     display: grid;
-    grid-template-areas: 
-    "nav header"
-    "nav analise aside"
-    "nav resumo"
-    "nav discussoes"
-    "nav footer";
+    grid-template-columns: 1fr;
 }
 
 /* Side Menu */
@@ -67,8 +63,52 @@ body {
         background-color: #FDF1EB;
     }
 
-
 }
 
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1324px;
+    height: 80px;
+    background-color: #FDF1EB;
+
+    #texts {
+        margin: 5px 0 5px 36px;
+    }
+
+    #language {
+
+        #language * {
+            display: flex;
+            background-color: white;
+        }
+    
+        #lang-container {
+            display: flex;
+            flex-direction: row;
+
+            padding: 4px 5px;
+            
+            border: 1px solid rgba(0,0,0,.2);
+            border-radius: 4px;
+        }
+        
+    }
+
+    #perfil {
+        display: flex;
+        
+        img{
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+
+    }
+
+}
 
 
