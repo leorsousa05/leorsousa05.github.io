@@ -37,89 +37,107 @@
         </ul>
     </nav>
 
-    <!-- Cabeçalho da página -->
-    <header>
-
-        <div id="texts">
-            <p>Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
-            <h3>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h3>
-            <p>ISSN: 1234-5678</p>
-        </div>
-
-        <div id="language">
-
-            <div id="lang-container">
-                <i class="fa-solid fa-globe"></i>
-                <p>PT, BR</p>
-                <i class="fa-solid fa-caret-down"></i>
-            </div>
-
-        </div>
-
-        <div id="perfil">
-            <p>Bem vindo!</p>
-            <h4 class="menor">alguem12@galoascience.com</h4>
-            <img src="imagens/image.png" alt="foto de perfil">
-            <p class="notification">2</p>
-        </div>
-
-    </header>
-
+    
     <main>
+        <!-- Cabeçalho da página -->
+        <header>
+    
+            <div id="texts">
+                <p>Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
+                <h3>Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h3>
+                <p>ISSN: 1234-5678</p>
+            </div>
+    
+            <div id="language">
+    
+                <div id="lang-container">
+                    <i class="fa-solid fa-globe"></i>
+                    <p>PT, BR</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+    
+            </div>
+    
+            <div id="perfil">
+                <div id="welcome">
+                    <p>Bem vindo!</p>
+                    <h4 class="menor">alguem12@galoascience.com</h4>
+                </div>
+                <div id="pf-foto">
+                    <img src="imagens/image.png" alt="foto de perfil">
+                    <p class="notification">2</p>
+                </div>
+            </div>
+    
+        </header>
 
         <!-- Conteúdo Primário -->
         <section id="analise">
 
-            <article>
-                <h4>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </h4>
+            <article id="video">
+                <h4 id="title">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </h4>
 
-                <div id="video">
-                    <img src="imagens/dewey-1.png" alt="">
-                    <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </h2>
-                    <div id="tutora">
-                        <img src="imagens/foto-antiga.png" alt="">
-                        <h1 class="hiper-titulo">Beatriz Christiane Melo</h1>
-                        <h4>FCA / Universidade Estadual de Campinas</h4>
+                <div id="video-container">
+                    <div id="vid">
+                        <img src="imagens/dewey-1.png" alt="">
+                        <div class="overlay"></div>
+                        
+                        <div id="titulo">
+                            <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </h2>
+                        </div>
+                        <div id="tutora">
+                            <img src="imagens/foto-antiga.png" alt="">
+                            <div id="pessoa">
+                                <h1>Beatriz Christiane Melo</h1>
+                                <h4>FCA / Universidade Estadual de Campinas</h4>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </article>
 
-        </section>
-
-        <!-- Conteúdo lateral -->
-        <aside>
-
-            <div id="btn-area">
-                <button><i class="fa-solid fa-download"></i> Download</button>
-                <button><i class="fa-solid fa-star"></i></button>
-                <button><img src="imagens/doi.png" alt=""></button>
-            </div>
-
-            <p>COMO CITAR ESSE TRABALHO?</p>
-
-            <div class="details">
-                <div class="cabecalho">
-                    <h4>Detalhes</h4>
+            <!-- Conteúdo lateral -->
+            <article id="lat">
+    
+                <div id="btn-area">
+                    <button><i class="fa-solid fa-download"></i> Download</button>
+                    <button><i class="fa-solid fa-star"></i></button>
+                    <button><img src="imagens/doi.png" alt=""></button>
                 </div>
-                <p>
-                    Tipo de Apresentação: Pôster
-                    Eixo temático: Alimentação e saúde (AS) 
-                    Palavras-chaves: Alimentos funcionais, alimentação escolar.
-                    
-                    Autores:
-                    <i> Galileo Galilei¹
-                    Berta Lange de Morretes²
-                    Isaac Newton³
-                    Cesar Lattes¹
-                    Stephen Hawking⁴</i>
-                    
-                    ¹Universidade Estadual de Campinas
-                    ²Universidade de São Paulo
-                    ³Instituto Nacional de Pesquisas Espaciais
-                    ⁴Universidade Federal do Rio de Janeiro
-                </p>
-            </div>
-        </aside>
+    
+                
+                <p id="how">COMO CITAR ESSE TRABALHO?</p>
+                
+
+                <div id="details">
+                    <div class="header">
+                        <h4>Detalhes</h4>
+                    </div>
+                    <div id="read-content">
+                        <p>
+                            Tipo de Apresentação: <b>Pôster</b> <br>
+                            Eixo temático: <b>Alimentação e saúde (AS) </b> <br> 
+                            Palavras-chaves: <b>Alimentos funcionais, alimentação escolar.</b>
+                            <br>
+                            <br>
+                            <b>Autores:</b> <br>
+                            <i> Galileo Galilei¹ <br>
+                            Berta Lange de Morretes² <br>
+                            Isaac Newton³ <br>
+                            Cesar Lattes¹ <br>
+                            Stephen Hawking⁴</i> <br>
+                            <br>
+                            <br>
+                            ¹Universidade Estadual de Campinas <br>
+                            ²Universidade de São Paulo <br>
+                            ³Instituto Nacional de Pesquisas Espaciais <br>
+                            ⁴Universidade Federal do Rio de Janeiro <br>
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
 
         <section id="Resumo">
 
@@ -176,12 +194,12 @@
             </article>
 
         </section>
-
-        <footer>
-            <img src="imagens/imagem-footer.png" alt="">
-        </footer>
-
+        
     </main>
+    
+    <footer>
+        <img src="imagens/imagem-footer.png" alt="">
+    </footer>
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/script.js"></script>
